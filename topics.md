@@ -24,6 +24,13 @@
 * Watch this video: [IAM Best Practices](https://www.youtube.com/watch?v=_wiGpBQGCjU)
 * Docs to read: [IAM Policies Evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html#policy-eval-denyallow)
 
+* Identity based policy & resource based policy => It's a unit of permissions. Explicit deny overrides allow.
+* Identity based policy & permission boundry policy => It's an intersection of permissions. Explicit deny overrides allow.
+* Identity based policy & organizations SCPs => It's an intersection of permissions. Explicit deny overrides allow.
+* Identity based policy & session policy => It's an intersection of permissions. Explicit deny overrides allow. Creted for fedarated users. Session policies dynamic per request.
+
+**General flow:** Explicit Deny(least privilige rule) -> Organizational SCPs -> Resource-based policies -> Permission-boundries policies -> Session policies -> Identity-based policies
+
 ###### Auto Scaling
 * Select your applications based on **resource tags** or **AWS CloudFormation stacks**
 
