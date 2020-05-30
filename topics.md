@@ -20,7 +20,8 @@
 
 
 ### IAM
-Watch this video: [IAM Best Practices](https://www.youtube.com/watch?v=_wiGpBQGCjU)
+* Watch this video: [IAM Best Practices](https://www.youtube.com/watch?v=_wiGpBQGCjU)
+* Docs to read: [IAM Policies Evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html#policy-eval-denyallow)
 
 ###### Auto Scaling
 * Select your applications based on **resource tags** or **AWS CloudFormation stacks**
@@ -46,6 +47,8 @@ Watch this video: [IAM Best Practices](https://www.youtube.com/watch?v=_wiGpBQGC
  - Minimum 0 seconds
  - Maximum 12 hours
 
+###### SNS
+* Use SNS to send messages to mobile devices, other distributed services, email recipients.
 
 ###### S3 Durability - 11 nines! 99.999999999%
 * S3 max object size 5 TB
