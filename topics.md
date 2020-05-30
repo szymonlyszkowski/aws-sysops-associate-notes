@@ -16,8 +16,9 @@
 * SQS operations
 * burstable performance
 
-
-
+##### Cloudwatch
+* When use CW + AWS SNS
+* When use Cw + AWS SES
 
 ### IAM
 * Watch this video: [IAM Best Practices](https://www.youtube.com/watch?v=_wiGpBQGCjU)
