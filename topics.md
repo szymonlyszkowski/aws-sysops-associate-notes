@@ -63,6 +63,8 @@
 TODO - add object sizes via methods (api, console, snowball)
 * [IAM Policies, Bucket Policies, Bucket ACLs](https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/)
 * Pre-signed URLs. Use when **NO** need to create AWS credentials. When accessing presigned URL, user must specify: *username, password, expiration date, HTTP method, bucket name, object key.* Pre-signed URLs are valid for specific time interval.
+**TODO:** AWS Import/Export, AWS Multipart upload
+
 
 **Reduced latency, security, disaster recovery, and other use cases:**
 * CRR (cross-region replication)
