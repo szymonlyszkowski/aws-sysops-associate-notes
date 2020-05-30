@@ -16,6 +16,18 @@
 * SQS operations
 * burstable performance
 
+
+
+
+### IAM
+Watch this video: [IAM Best Practices](https://www.youtube.com/watch?v=_wiGpBQGCjU)
+
+###### Auto Scaling
+* Select your applications based on **resource tags** or **AWS CloudFormation stacks**
+
+`AddToLoadBalancer` - when it is suspended new instances are not registered in loadbalancer/target group. However, resumes registering new instances after suspension is closed.
+
+
 ###### NACL
 * Rules are evaluated starting with the lowest **numbered rule**. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it.
 
@@ -29,7 +41,7 @@
 * Cost optimize - use batches (request containing batch or single message cost the same).
 * `DeleteMessage` - When you issue a DeleteMessage request on a previously-deleted message, Amazon SQS returns a success response.
 * `ReceiveMessage` -  SQS returns a message to you, the message stays in the message queue whether or not you actually receive the message. You're responsible for deleting the message
-* visibility timeout - a period of time during which Amazon SQS prevents other consumers from receiving and processing the message.
+* **visibility timeout** - a period of time during which Amazon SQS prevents other consumers from receiving and processing the message.
  - Default 30 seconds
  - Minimum 0 seconds
  - Maximum 12 hours
