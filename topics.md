@@ -50,6 +50,7 @@ Watch this video: [IAM Best Practices](https://www.youtube.com/watch?v=_wiGpBQGC
 ###### S3 Durability - 11 nines! 99.999999999%
 * S3 max object size 5 TB
 * [IAM Policies, Bucket Policies, Bucket ACLs](https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/)
+* Pre-signed URLs. Use when **NO** need to create AWS credentials. When accessing presigned URL, user must specify: *username, password, expiration date, HTTP method, bucket name, object key.* Pre-signed URLs are valid for specific time interval.
 
 **Reduced latency, security, disaster recovery, and other use cases:**
 * CRR (cross-region replication)
