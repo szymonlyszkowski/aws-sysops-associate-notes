@@ -16,6 +16,9 @@
 * SQS operations
 * burstable performance
 
+###### NACL
+* Rules are evaluated starting with the lowest **numbered rule**. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it.
+
 ###### SQS
 * Messages stored for max 14 days
 * SQS vs Amazon MQ - use MQ when deploying legacy apps. Amazon MQ uses industry standard interfaces so no refactoring needed to app.
