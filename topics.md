@@ -62,6 +62,12 @@ API Calls:
 `DescribeInstances` - status of instances
 `TerminateInstances` - terminate instances
 
+* Instance metadata - data about your instance that you can use to configure or manage the running instance. Instance metadata has access to *user data*. 
+
+*For example, you can specify parameters for configuring your instance, or include a simple script. You can build generic AMIs and use user data to modify the configuration files supplied at launch time.*
+
+* Dynamic data - generated when the instance is launched (e.g instance identity document).
+
 Local instance store vs. EBS for root device.
 * EBS - By using Amazon EBS, data on the root device will persist independently from the lifetime of the instance(start/stop). When instance terimantes EBS is deleted. It can be set flag: `Delete On Terminate` to **NOT** remove EBS when terminating instance.
 * Local instance store - only persists during the life of the instance(start/stop)
