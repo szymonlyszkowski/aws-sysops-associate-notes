@@ -58,12 +58,7 @@
 ###### SNS
 * Use SNS to send messages to mobile devices, other distributed services, email recipients.
 
-###### S3 Durability - 11 nines! 99.999999999%
-* S3 max object size 5 TB
-TODO - add object sizes via methods (api, console, snowball)
-* [IAM Policies, Bucket Policies, Bucket ACLs](https://aws.amazon.com/blogs/security/iam-policies-and-bucket-policies-and-acls-oh-my-controlling-access-to-s3-resources/)
-* Pre-signed URLs. Use when **NO** need to create AWS credentials. When accessing presigned URL, user must specify: *username, password, expiration date, HTTP method, bucket name, object key.* Pre-signed URLs are valid for specific time interval.
-**TODO:** AWS Import/Export, AWS Multipart upload
+
 
 
 **Reduced latency, security, disaster recovery, and other use cases:**
@@ -89,8 +84,6 @@ Local instance store vs. EBS for root device.
 
 * It is **supported** to attach **multiple** volumes to instance
 * It is **NOT supported** to attach **multiple** instances to one volume
-
-
 
 
 ###### Create AMI
