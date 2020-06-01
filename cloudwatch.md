@@ -9,7 +9,7 @@
   
 * Concepts in CW:
  - Namespaces
- - Metrics
+ - Metrics - fundametnal concept in CW. **Time-ordered set of data point** published to CW. Metrics exists only in region where they were created. Metrics **cannot be deleted** but they expire after **15** months if given **metric** is not updated.
  - Dimensions
  - Statistics
  - Percentiles
