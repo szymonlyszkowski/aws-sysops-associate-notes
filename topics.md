@@ -15,6 +15,7 @@
 * ec2 standard metrics
 * SQS operations
 * burstable performance
+* guarduty
 
 ##### Cloudwatch
 * When use CW + AWS SNS
