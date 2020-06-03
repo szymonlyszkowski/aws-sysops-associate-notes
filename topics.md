@@ -16,6 +16,14 @@
 * SQS operations
 * burstable performance
 * guarduty
+* s3 server access logs
+* vpc endpoints details
+* configuration recorder
+* aws organizations
+* aws config
+* aws billing 
+
+
 
 ##### Cloudwatch
 * When use CW + AWS SNS
