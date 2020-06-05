@@ -21,6 +21,12 @@
 * aws organizations
 * aws config
 * aws billing 
+* oai s3 bucket
+* raid ec2
+* quicksight iam and encryption
+* ec2 when public ip i assigned
+* aws drect connect, dual mode fiber, connection details
+
 
 
 
