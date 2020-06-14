@@ -45,6 +45,8 @@
 
 **General flow:** Explicit Deny(least privilige rule) -> Organizational SCPs -> Resource-based policies -> Permission-boundries policies -> Session policies -> Identity-based policies
 
+* Only **assume role** operation can have set `DurationSeconds` parameter. No other options possible.
+
 ###### Auto Scaling
 * Select your applications based on **resource tags** or **AWS CloudFormation stacks**
 
