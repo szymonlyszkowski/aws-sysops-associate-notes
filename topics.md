@@ -101,6 +101,9 @@ Local instance store vs. EBS for root device.
 * It is **supported** to attach **multiple** volumes to instance
 * It is **NOT supported** to attach **multiple** instances to one volume
 
+##### performance-sensitive workloads: 
+Any performance-sensitive workloads that require minimal variability and dedicated Amazon EC2 to Amazon EBS traffic, such as production databases or business applications, should use volumes that are attached to an EBS-optimized instance or an instance with 10 Gigabit network connectivity. EC2 instances that do not meet this criterion offer no guarantee of network resources. The only way to ensure sustained reliable network bandwidth between your EC2 instance and your EBS volumes is to launch the EC2 instance as **EBS-optimized or choose an instance type with 10 Gigabit network connectivity**
+
 
 ###### Create AMI
 ```
