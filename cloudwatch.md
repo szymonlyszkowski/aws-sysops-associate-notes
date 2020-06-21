@@ -15,12 +15,11 @@
    - Percentiles
    - Alarms
 
- ##### Cloudwatch
+**Billing alarms** - Before you can create an alarm for your estimated charges, you must enable billing alerts, so that you can monitor your estimated AWS charges and create an alarm using billing metric data. After you enable billing alerts, you cannot disable data collection, but you can delete any billing alarms that you created (enable billing alarms in account preferences)
+
+TODO:
 * When use CW + AWS SNS
 * When use Cw + AWS SES
-
-Billing alarms - in cloud watch ! Before you can create an alarm for your estimated charges, you must enable billing alerts, so that you can monitor your estimated AWS charges and create an alarm using billing metric data. After you enable billing alerts, you cannot disable data collection, but you can delete any billing alarms that you created (enable billing alarms in account preferences)
-
 
 Cloudwatch - metrics with high resolution.
 
