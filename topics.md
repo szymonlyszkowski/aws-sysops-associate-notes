@@ -20,7 +20,7 @@
 * configuration recorder
 * aws organizations
 * aws config
-* aws billing 
+* aws billing
 * oai s3 bucket
 * raid ec2
 * quicksight iam and encryption
@@ -34,15 +34,14 @@
 * Load balancer access logs
 * Eni vs Elastic IP
 * Cloud formation parts: conditions, resources, mappings, outputs
-* Read replicas for amazon aurora 
+* Read replicas for amazon aurora
 * Cloud front, edge locations configuration (security groups etc.)
 * Conditions in s3 access policies
 * AWS data pipeline
 * Dual vpn connection
 * Changing instance type - when can be done ?
-* Custom metrics publishing 
-* Aws swf 
-* Authenticating to aws via different IDP 
+* Custom metrics publishing
+* Aws swf
+* Authenticating to aws via different IDP
 * Access logs (cloud trail) files integrity
-* Aws redshift 
 * AWS inline policy
