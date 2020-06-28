@@ -6,7 +6,6 @@
 * when to add node to cluster cache & when to increase node size
 * cloudwatch custom scripts
 * bandwith & performance for EC2 instances
-* rds read replicas cross region. what is required vpc peering, db version etc.
 * snapshots vs backup for rds and redis
 * snapshot creation time
 * asg and elb when includes new instances
