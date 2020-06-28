@@ -1,8 +1,6 @@
 * NIC driver
 * instance store
 * rds read replicas vs. snapshots & performance
-* evictions in elastic cache cluster
-* elastic cachec node size, when to upgrade etc.
 * when to add node to cluster cache & when to increase node size
 * cloudwatch custom scripts
 * bandwith & performance for EC2 instances
