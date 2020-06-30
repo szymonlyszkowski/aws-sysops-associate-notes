@@ -10,7 +10,6 @@
 * what is the reason when new ec2 are added to asg but not taken by ELB
 * ec2 standard metrics
 * SQS operations
-* burstable performance
 * guarduty
 * s3 server access logs
 * vpc endpoints details
