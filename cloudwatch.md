@@ -4,7 +4,7 @@
 * Metrics are stored separately in Regions but you can use CloudWatch cross-Region functionality to aggregate statistics from different Region
 * You can provide your own custom metrics to cloudwatch.
 * You can create **alarms** based on statistics which initiate (when outside of threshold):
-  - EC2 ASG
+  - EC2 ASG1
   - Amazon SNS
 
 * Concepts in CW:
@@ -29,9 +29,13 @@
 * `NetworkPacketsOut`
 * `MetadataNoToken`
 
-* __Instance Status Check__ - Verifies if VM is running correctly
-* __System Status Check__ - Verifies if Physical Host is running correctly
+* __Instance Status Check__ - Verifies if VM is running correctly (issues of: incorrect networking/startup setup, memory overusage, incompatible kernel, corrupted filesystem) 
+* __System Status Check__ - Verifies if Physical Host is running correctly (issues of: network connectivity, hardware or software, loss of system power)
 * __RAM usage__ is a __custom__ metric!
+
+There are two variants of EC2 instances monitoring: __detailed__ & __basic__. By default basic monitoring is enabled.
+* __Basic monitoring__ - gathers data every __5__ minutes (63 days of retention)
+* __Detailed monitoring__ - gathers date every __1__ minute (14 days of retention, even after EC2 instance is terminated)
 
 TODO:
 * When use CW + AWS SNS
