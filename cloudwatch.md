@@ -29,6 +29,10 @@
 * `NetworkPacketsOut`
 * `MetadataNoToken`
 
+* __Instance Status Check__ - Verifies if VM is running correctly
+* __System Status Check__ - Verifies if Physical Host is running correctly
+* __RAM usage__ is a __custom__ metric!
+
 TODO:
 * When use CW + AWS SNS
 * When use Cw + AWS SES
