@@ -1,6 +1,9 @@
 ### Cloudformation
 
 * CF is free of charge. You pay only for provisioned resources using cloud formation
+* Use AWS IAM to control access to CF resources & templates
+* CF templates can be stored in git
+* CloudFormation provides a set of application bootstrapping scripts that enable you to install packages to your AWS resources
 * You can provision & update your infrastructure using a __template__
 * __Templates__ are stored as `.yaml` or `.json` file
 * A collection of associated resources within __template__ is called a __stack__
