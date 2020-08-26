@@ -15,3 +15,5 @@ CF:
 * __conditions__ - specifies if given resources or their parameters are optional during creation or update
 * __parameters__ - input values for stack (optional)
 * __outputs__ - output values from stack (e.g url to created application, optional)
+
+TODO update list of CF assets
