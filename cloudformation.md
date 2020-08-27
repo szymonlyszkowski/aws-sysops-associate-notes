@@ -12,8 +12,11 @@
 CF:
 
 * __resources__ - a list of resources to be created within stack (e.g. EC2) __MANDATORY__ !
-* __conditions__ - specifies if given resources or their parameters are optional during creation or update
+* __conditions__ - specifies if given resources or their parameters are optional during creation or update (optional)
 * __parameters__ - input values for stack (optional)
 * __outputs__ - output values from stack (e.g url to created application, optional)
-
-TODO update list of CF assets
+* __format version__ - template version (optional)
+* __desciption__ - description for template (optional)
+* __mappings__ -  mapping of keys and associated values that you can use to specify conditional parameter values, like a lookup table. (optional)
+* __transform__ - for AWS lambda, specifies AWS Serverless Application Model (AWS SAM) to use (optional)
+* __metadata__ - additional info about template
