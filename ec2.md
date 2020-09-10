@@ -6,8 +6,7 @@ API Calls:
 `TerminateInstances` - terminate instances
 
 * Instance metadata - data about your instance that you can use to configure or manage the running instance. Instance metadata has access to *user data*.
-
-*For example, you can specify parameters for configuring your instance, or include a simple script. You can build generic AMIs and use user data to modify the configuration files supplied at launch time.*
+> For example, you can specify parameters for configuring your instance, or include a simple script. You can build generic AMIs and use user data to modify the configuration files supplied at launch time.*
 
 * Dynamic data - generated when the instance is launched (e.g instance identity document).
 
@@ -21,6 +20,15 @@ Local instance store vs. EBS for root device.
 ##### performance-sensitive workloads:
 Any performance-sensitive workloads that require minimal variability and dedicated Amazon EC2 to Amazon EBS traffic, such as production databases or business applications, should use volumes that are attached to an EBS-optimized instance or an instance with 10 Gigabit network connectivity. EC2 instances that do not meet this criterion offer no guarantee of network resources. The only way to ensure sustained reliable network bandwidth between your EC2 instance and your EBS volumes is to launch the EC2 instance as **EBS-optimized or choose an instance type with 10 Gigabit network connectivity**
 
+##### Resize EC2 (EBS-backed)
+In order to resize EC2 EBS-backed instance its required to __STOP__ instance! What happens underneath:
+* __New hardware__ is allocated
+* __New public IPv4__ is assigned
+* __Old ANY IPv6__ is preserved
+* __Old Elastic IP__ is preserved
+* If instance is part of ASG is will be marked as _unhealthy_. In order to not make it terminated by ASG, ASG should __suspend__ the scaling processes for the group while you're resizing your instance.
+* If your instance is in a __cluster placement group__ and, after changing the instance type, the instance start fails, try the following: stop all the instances in the cluster placement group, change the instance type for the affected instance, and then restart all the instances in the cluster placement group.
+> Make sure you're prepared for downtime! __Stop & resize__ might take __few minutes__. Restart is dependent on lenght of startup scripts!
 
 ###### Create AMI
 ```
