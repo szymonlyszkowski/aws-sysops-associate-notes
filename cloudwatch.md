@@ -3,9 +3,6 @@
 * You can use metrics to calculate statistics and then present the data graphically in the CloudWatch console.
 * Metrics are stored separately in Regions but you can use CloudWatch cross-Region functionality to aggregate statistics from different Region
 * You can provide your own custom metrics to cloudwatch.
-* You can create **alarms** based on statistics which initiate (when outside of threshold):
-  - EC2 ASG1
-  - Amazon SNS
 
 * Concepts in CW:
    - Namespaces
@@ -36,6 +33,14 @@
 There are two variants of EC2 instances monitoring: __detailed__ & __basic__. By default basic monitoring is enabled.
 * __Basic monitoring__ - gathers data every __5__ minutes (63 days of retention)
 * __Detailed monitoring__ - gathers date every __1__ minute (14 days of retention, even after EC2 instance is terminated)
+
+### Cloudwatch Alarms
+* You can create **alarms** based on statistics which initiate (when outside of threshold):
+  - EC2 ASG
+  - Amazon SNS
+* __Metric alarm__ - watches single CW Metric or __result__ of math expression based on CW Metric. Alarm performs __one__ or __more actions__ based on the value of the metric or expression relative to a threshold over a number of time periods. Actions can be performed on services: __EC2, ASG, SNS__
+* __Composite alarm__ - inludes the expression of that takes into account states of other alarm states. The composite alarm goes into ALARM state __only if all conditions of the rule__ are met!
+
 
 TODO:
 * When use CW + AWS SNS
