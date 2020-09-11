@@ -20,6 +20,10 @@ Local instance store vs. EBS for root device.
 ##### performance-sensitive workloads:
 Any performance-sensitive workloads that require minimal variability and dedicated Amazon EC2 to Amazon EBS traffic, such as production databases or business applications, should use volumes that are attached to an EBS-optimized instance or an instance with 10 Gigabit network connectivity. EC2 instances that do not meet this criterion offer no guarantee of network resources. The only way to ensure sustained reliable network bandwidth between your EC2 instance and your EBS volumes is to launch the EC2 instance as **EBS-optimized or choose an instance type with 10 Gigabit network connectivity**
 
+##### Instance limits
+`InstanceLimitExceeded` - limit of EC2 instances has been reached within AWS Region. If U want to increase limit __contact AWS support__
+`InsufficientInstanceCapacity` - AWS does not currently have enough On-Demand Instances. To fix you can possibly wait a few minutes, try to start smaller amount of instances than initial request, try no to specify AZ for EC2 instance, try to purchase reserved-instances (long term capacity reservation).
+
 ##### Resize EC2 (EBS-backed)
 In order to resize EC2 EBS-backed instance its required to __STOP__ instance! What happens underneath:
 * __New hardware__ is allocated
