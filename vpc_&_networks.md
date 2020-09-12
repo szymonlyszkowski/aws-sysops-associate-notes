@@ -14,3 +14,8 @@
 
 ###### NACL
 * Rules are evaluated starting with the lowest **numbered rule**. As soon as a rule matches traffic, it's applied regardless of any higher-numbered rule that might contradict it.
+
+###### VPC Flow Log format
+```
+<version> <account-id> <interface-id> <srcaddr> <dstaddr> <srcport> <dstport> <protocol> <packets> <bytes> <start> <end> <action> <log-status>
+```
