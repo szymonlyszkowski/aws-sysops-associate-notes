@@ -8,6 +8,7 @@
 * __Templates__ are stored as `.yaml` or `.json` file
 * A collection of associated resources within __template__ is called a __stack__
 * __Stacks__ can be applied via AWS CLI, AWS API, AWS Console
+* [How CloudFormation Drift Detection works](https://aws.amazon.com/blogs/aws/new-cloudformation-drift-detection/)
 
 CF:
 
