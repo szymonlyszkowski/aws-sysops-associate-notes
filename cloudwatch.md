@@ -12,10 +12,8 @@
    - Percentiles
    - Alarms
 
-**Billing alarms** - Before you can create an alarm for your estimated charges, you must enable billing alerts, so that you can monitor your estimated AWS charges and create an alarm using billing metric data. After you enable billing alerts, you cannot disable data collection, but you can delete any billing alarms that you created __(enable billing alarms in account preferences)__
-
-[Custom foo description](#foo)
-
+#### Billing Alarms
+Before you can create an alarm for your estimated charges, you must enable billing alerts, so that you can monitor your estimated AWS charges and create an alarm using billing metric data. After you enable billing alerts, you cannot disable data collection, but you can delete any billing alarms that you created __(enable billing alarms in account preferences)__
 
 
 #### EC2 Default CW Metris:
