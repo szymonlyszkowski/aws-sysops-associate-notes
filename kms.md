@@ -19,4 +19,8 @@
       * Automatic key rotation gives following: no need to update key id, arn, alias in applications. key ID, key ARN, region, policies, and permissions, do not change when the key is rotated.
       ![](./kms_key_rotation.png)
        > However, automatic key rotation has no effect on the data that the CMK protects. It does not rotate the data keys that the CMK generated or re-encrypt any data protected by the CMK, and it will not mitigate the effect of a compromised data key.
+       * _Envelope encryption_ is the practice of encrypting plaintext data with a data key, and then encrypting the data key under another key. 
+       ![](./envelope_encryption.png)
+
+
 
