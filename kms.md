@@ -1,6 +1,6 @@
 # AWS KMS Keys
 
-![](./kms_key_matrix.png)
+![](./kms_key_matrix.PNG)
 
 1. Region-based service
 1. AWS Managed Keys
