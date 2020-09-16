@@ -24,11 +24,11 @@ Unlike a CNAME record, you can create an alias record at the top node of a DNS n
 
 ##### Route 53 Healthchecks
 1. Determine healthcheck which monitors an __endpoint__
-  * Based on response time (network can be down, DDoS can be present)
-  * Based on healthcheck status (if 18% of __health checkers__ or more is healthy consider healthy if not unhealthy)
-      * __HTTP/S__ checkers - consider connection established within __4__ seconds as healthy + response with __2XX & 3XX__ status code __after__ connection is established
-      * __TCP__ checker - consider connections established within __10__ seconds as healthy
-      * __HTTP/S with string check__ - TODO
+    * Based on response time (network can be down, DDoS can be present)
+    * Based on healthcheck status (if 18% of __health checkers__ or more is healthy consider healthy if not unhealthy)
+        * __HTTP/S__ checkers - consider connection established within __4__ seconds as healthy + response with __2XX & 3XX__ status code __after__ connection is established
+        * __TCP__ checker - consider connections established within __10__ seconds as healthy
+        * __HTTP/S with string check__ - TODO
       
 1. Determine healthcheck which monitors __other healthchecks__
    * TODO
