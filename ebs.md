@@ -22,3 +22,6 @@ Can be used to __automate__: _creation, deletion, retention_ of snaphots taken f
    * Snapshot per region: __100,000__
    * Snapshot __concurent copy__ to another aws region limit: __20__ per account 
    * Snapshots enabled for fast snapshot restore	__50__
+
+1. EBS RAID Configuration [docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/raid-config.html):
+
