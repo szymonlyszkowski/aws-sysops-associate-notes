@@ -24,7 +24,8 @@ Can be used to __automate__: _creation, deletion, retention_ of snaphots taken f
    * Snapshots enabled for fast snapshot restore	__50__
 
 1. EBS RAID Configuration [docs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/raid-config.html):
+
 |        |                                    Usage                                   |           +          |                                          -                                         |
 |-------:|:--------------------------------------------------------------------------:|:--------------------:|:----------------------------------------------------------------------------------:|
-| RAID 0 |      When __performance__ is more important than __fault tolerance__ e.g. databases     | Improved performance |        Form a stripe. When one of volumes corrupted __second lost__ as well        |
+| RAID 0 |      When __performance__ is more important than __fault tolerance__ e.g. databases     | Improved performance |        Form a stripe. When one of volumes corrupted __second lost__ as well |
 | RAID 1 | When __fault tolerance__ more important than performance e.g. critical applications |  Improved durability | Requires additional EBS to achieve performance when not using RAID 1configuration. |
