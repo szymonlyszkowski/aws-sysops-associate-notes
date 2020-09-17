@@ -21,3 +21,11 @@ CF:
 * __mappings__ -  mapping of keys and associated values that you can use to specify conditional parameter values, like a lookup table. (optional)
 * __transform__ - for AWS lambda, specifies AWS Serverless Application Model (AWS SAM) to use (optional)
 * __metadata__ - additional info about template
+
+TODO: 
+cnf-init
+cnf-singal
+cnf-hup
+cnf-get-metadata
+CreatePolicy
+UpdatePolicy
